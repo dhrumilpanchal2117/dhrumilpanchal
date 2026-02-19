@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Karigari | Handmade & Creative Designs</title>
-<meta name="description" content="Karigari offers creative handmade designs, custom artwork, and unique craft products.">
-<meta name="keywords" content="Karigari, handmade, craft, creative designs, handmade business">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/karigari.css">
+<meta name="google-site-verification" content="kigWjvFu3Ftz32ZBFVRLgz1Na5BlwbNc_ga9qNAjVNo" />
+<title>Foodie Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <h1 class="logo">Delicious Bites</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navbar -->
+<header>
+    <h1 class="logo">Foodie</h1>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h2>Welcome to Delicious Bites</h2>
-        <p>Fresh • Tasty • Affordable</p>
-        <button>Order Now</button>
-    </section>
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-container">
-            <div class="card">
-                <h3>Pizza</h3>
-                <p>Cheesy and loaded pizza</p>
-                <span>₹199</span>
-            </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
 
-            <div class="card">
-                <h3>Burger</h3>
-                <p>Juicy grilled burger</p>
-                <span>₹129</span>
-            </div>
+<!-- Hero -->
+<section class="hero">
+    <h2>Delicious Food, Happy Mood 😋</h2>
+    <p>Fresh • Tasty • Affordable</p>
+    <button>Order Now</button>
+</section>
 
-            <div class="card">
-                <h3>Pasta</h3>
-                <p>Creamy white sauce pasta</p>
-                <span>₹159</span>
-            </div>
+<!-- Menu -->
+<section class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-container">
+        <div class="card">
+            <h3>🍕 Pizza</h3>
+            <p>Loaded cheese pizza</p>
+            <span>₹199</span>
         </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>We serve fresh and delicious food made with love. Visit us for the best dining experience.</p>
-    </section>
+        <div class="card">
+            <h3>🍔 Burger</h3>
+            <p>Grilled juicy burger</p>
+            <span>₹129</span>
+        </div>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>📍 Ahmedabad, India</p>
-        <p>📞 +91 98765 43210</p>
-        <p>✉ deliciousbites@gmail.com</p>
-    </section>
+        <div class="card">
+            <h3>🍝 Pasta</h3>
+            <p>Creamy white sauce pasta</p>
+            <span>₹159</span>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Delicious Bites Restaurant | All Rights Reserved</p>
-    </footer>
+        <div class="card">
+            <h3>🥤 Cold Drink</h3>
+            <p>Chilled soft drink</p>
+            <span>₹49</span>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>We serve fresh, hygienic and tasty food made with love. Visit once and you will love it forever ❤️</p>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>📍 Ahmedabad, India</p>
+    <p>📞 +91 9876543210</p>
+</section>
+
+<footer>
+    <p>© 2026 Foodie Restaurant</p>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("nav").classList.toggle("show");
+}
+</script>
 
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
 </html>
